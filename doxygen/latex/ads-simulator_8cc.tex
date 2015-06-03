@@ -1,0 +1,56 @@
+\hypertarget{ads-simulator_8cc}{}\section{ads-\/simulator.cc File Reference}
+\label{ads-simulator_8cc}\index{ads-\/simulator.\+cc@{ads-\/simulator.\+cc}}
+
+
+File containing the A\+D detector and simulation This file contains both headers and declarations for classes + run the simulator in the main class (instead of classic couple .h and .cc because I need to understand the setup to do so in N\+S3 (act as module or similar with wscript).  
+
+
+{\ttfamily \#include \char`\"{}ns3/core-\/module.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}ns3/node.\+h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structResult}{Result}
+\item 
+class \hyperlink{classMatrix}{Matrix}
+\begin{DoxyCompactList}\small\item\em Tool class used for manipulate data from input data and features. \end{DoxyCompactList}\item 
+class \hyperlink{classModel}{Model}
+\begin{DoxyCompactList}\small\item\em Abstract class of \hyperlink{classModel}{Model}. \end{DoxyCompactList}\item 
+class \hyperlink{classDataSource}{Data\+Source}
+\begin{DoxyCompactList}\small\item\em Abstract class of \hyperlink{classDataSource}{Data\+Source}. \end{DoxyCompactList}\item 
+class \hyperlink{classDetector}{Detector}
+\begin{DoxyCompactList}\small\item\em Abstract class of \hyperlink{classDetector}{Detector}. \end{DoxyCompactList}\item 
+class \hyperlink{classEuclideanModel}{Euclidean\+Model}
+\begin{DoxyCompactList}\small\item\em Euclidian model for the 1st algorithm for A\+D Inherit from \hyperlink{classModel}{Model}. \end{DoxyCompactList}\item 
+class \hyperlink{classDetectorEuclidean}{Detector\+Euclidean}
+\begin{DoxyCompactList}\small\item\em Euclidian detector used for the 1st algorithm for A\+D Inherit from \hyperlink{classDetector}{Detector}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{ads-simulator_8cc_a904b2f9c8f3951116c343784c59d6afe}{}enum {\bfseries Attack\+Type} \{ \\*
+{\bfseries A\+T\+\_\+\+D\+R\+A\+I\+N}, 
+{\bfseries A\+T\+\_\+\+D\+R\+A\+I\+N\+\_\+\+M\+I\+T}, 
+{\bfseries A\+T\+\_\+\+G\+R\+E\+Y\+H\+O\+L\+E}, 
+{\bfseries A\+T\+\_\+\+G\+R\+E\+Y\+H\+O\+L\+E\+\_\+\+M\+I\+T}, 
+\\*
+{\bfseries A\+T\+\_\+\+F\+L\+O\+O\+D}, 
+{\bfseries A\+T\+\_\+\+F\+L\+O\+O\+D\+\_\+\+M\+I\+T}, 
+{\bfseries A\+T\+\_\+\+M\+A\+X\+N\+U\+M}
+ \}\label{ads-simulator_8cc_a904b2f9c8f3951116c343784c59d6afe}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{ads-simulator_8cc_a796f987c7a114e4a30f99022fac1af0d}{}{\bfseries N\+S\+\_\+\+L\+O\+G\+\_\+\+C\+O\+M\+P\+O\+N\+E\+N\+T\+\_\+\+D\+E\+F\+I\+N\+E} (\char`\"{}A\+D\+S\+Simulator\char`\"{})\label{ads-simulator_8cc_a796f987c7a114e4a30f99022fac1af0d}
+
+\item 
+\hypertarget{ads-simulator_8cc_a0ddf1224851353fc92bfbff6f499fa97}{}int {\bfseries main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})\label{ads-simulator_8cc_a0ddf1224851353fc92bfbff6f499fa97}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File containing the A\+D detector and simulation This file contains both headers and declarations for classes + run the simulator in the main class (instead of classic couple .h and .cc because I need to understand the setup to do so in N\+S3 (act as module or similar with wscript). 
+

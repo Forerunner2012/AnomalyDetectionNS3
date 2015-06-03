@@ -1,0 +1,57 @@
+\hypertarget{classDetector}{}\section{Detector Class Reference}
+\label{classDetector}\index{Detector@{Detector}}
+
+
+Abstract class of \hyperlink{classDetector}{Detector}.  
+
+
+Inheritance diagram for Detector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classDetector}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDetector_ad1eaa0403bdfc31b523fc7ee837bd2e6}{}{\bfseries Detector} (\hyperlink{classDataSource}{Data\+Source} $\ast$ds, \hyperlink{classModel}{Model} $\ast$m, uint64\+\_\+t p\+\_\+init, uint64\+\_\+t p\+\_\+train\+\_\+interval, bool p\+\_\+only\+\_\+one\+\_\+train)\label{classDetector_ad1eaa0403bdfc31b523fc7ee837bd2e6}
+
+\item 
+\hypertarget{classDetector_ab791196650bf084ead62c88d29b6ef53}{}{\bfseries Detector} (\hyperlink{classDataSource}{Data\+Source} $\ast$ds, uint64\+\_\+t p\+\_\+init, uint64\+\_\+t p\+\_\+train\+\_\+interval, bool p\+\_\+only\+\_\+one\+\_\+train)\label{classDetector_ab791196650bf084ead62c88d29b6ef53}
+
+\item 
+\hypertarget{classDetector_a0b509e253c05cb27135524c4a7812c30}{}virtual \hyperlink{structResult}{Result} {\bfseries Evaluate} ()=0\label{classDetector_a0b509e253c05cb27135524c4a7812c30}
+
+\item 
+\hypertarget{classDetector_a25534c5a1eefeae99b3cfa1cc2c560ca}{}virtual void {\bfseries Train} (bool anomaly)=0\label{classDetector_a25534c5a1eefeae99b3cfa1cc2c560ca}
+
+\item 
+\hypertarget{classDetector_aedc62b2e44f9ade929695432abe49279}{}void {\bfseries register\+Feature\+Extractor} (\hyperlink{classDataSource}{Data\+Source} $\ast$datasource)\label{classDetector_aedc62b2e44f9ade929695432abe49279}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDetector_a8a5e1748b785cfca369357a80f85fdc3}{}\hyperlink{classDataSource}{Data\+Source} $\ast$ {\bfseries m\+\_\+datasource}\label{classDetector_a8a5e1748b785cfca369357a80f85fdc3}
+
+\item 
+\hypertarget{classDetector_a7848ee9218c0b91632acd45180db1c31}{}\hyperlink{classModel}{Model} $\ast$ {\bfseries m\+\_\+model}\label{classDetector_a7848ee9218c0b91632acd45180db1c31}
+
+\item 
+\hypertarget{classDetector_a025d23b856701f341fbc4067457fc907}{}uint64\+\_\+t {\bfseries m\+\_\+init\+\_\+period}\label{classDetector_a025d23b856701f341fbc4067457fc907}
+
+\item 
+\hypertarget{classDetector_ab5187390b9fe4d8794517c4611c91044}{}uint64\+\_\+t {\bfseries m\+\_\+train\+\_\+interval}\label{classDetector_ab5187390b9fe4d8794517c4611c91044}
+
+\item 
+\hypertarget{classDetector_add0d08bdaa26cd6c81710da5d4be4b84}{}bool {\bfseries m\+\_\+only\+\_\+one\+\_\+train}\label{classDetector_add0d08bdaa26cd6c81710da5d4be4b84}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class of \hyperlink{classDetector}{Detector}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ads-simulator_8cc}{ads-\/simulator.\+cc}\end{DoxyCompactItemize}
