@@ -1,0 +1,11 @@
+#!/bin/bash
+
+git add doxygen/
+
+git add update_code
+git add prepare_for_commit 
+
+git add ads-simulator.cc
+
+
+

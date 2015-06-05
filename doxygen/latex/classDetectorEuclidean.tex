@@ -104,7 +104,7 @@ Method that calculates final average vector. \hypertarget{classDetectorEuclidean
 \item[{{\bf Euclidean\+Model} $\ast$}]{model}
 \end{DoxyParamCaption}
 )}\label{classDetectorEuclidean_a5c153476961363c67cf34f467aa06062}
-Calculate the threshold used to evaluate the distance. \hypertarget{classDetectorEuclidean_abed09af9d25d97db2c22546c576de054}{}\index{Detector\+Euclidean@{Detector\+Euclidean}!Distance@{Distance}}
+Calculate the threshold used to evaluate the distance in collecting data phase during training \#1 \hypertarget{classDetectorEuclidean_abed09af9d25d97db2c22546c576de054}{}\index{Detector\+Euclidean@{Detector\+Euclidean}!Distance@{Distance}}
 \index{Distance@{Distance}!Detector\+Euclidean@{Detector\+Euclidean}}
 \subsubsection[{Distance}]{\setlength{\rightskip}{0pt plus 5cm}double Detector\+Euclidean\+::\+Distance (
 \begin{DoxyParamCaption}
@@ -137,7 +137,7 @@ Implements \hyperlink{classDetector}{Detector}.
 \item[{int}]{num\+\_\+elements}
 \end{DoxyParamCaption}
 )}\label{classDetectorEuclidean_ac6c5aeafe7ea87499b31169fcbf5a0a1}
-Method to normalise a vector. \hypertarget{classDetectorEuclidean_ab925bf1423f99478e3b57727ade60940}{}\index{Detector\+Euclidean@{Detector\+Euclidean}!Train@{Train}}
+Method to normalise our vector with the (x-\/min(x))/(max(x)-\/min(x)) normalization technic \hypertarget{classDetectorEuclidean_ab925bf1423f99478e3b57727ade60940}{}\index{Detector\+Euclidean@{Detector\+Euclidean}!Train@{Train}}
 \index{Train@{Train}!Detector\+Euclidean@{Detector\+Euclidean}}
 \subsubsection[{Train}]{\setlength{\rightskip}{0pt plus 5cm}void Detector\+Euclidean\+::\+Train (
 \begin{DoxyParamCaption}
@@ -171,7 +171,7 @@ Notice that the average vector is only incremented instead of averaging it. This
 \item[{bool}]{p\+\_\+norm\+\_\+data}
 \end{DoxyParamCaption}
 )}\label{classDetectorEuclidean_a09a0f75f67c2f09560428cef82ff4059}
-Calculate the threshold used to evaluate the distance. 
+Calculate the threshold used to evaluate the distance in computing data phase during training \#2 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

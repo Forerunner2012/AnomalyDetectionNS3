@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -134,6 +135,12 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a1c0cb5cd68640a4d58b0bd7391e2326f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ads-simulator_8cc.html#a1c0cb5cd68640a4d58b0bd7391e2326f">vDotProduct</a> (const double *a_vector, const double *b_vector, int size)</td></tr>
+<tr class="separator:a1c0cb5cd68640a4d58b0bd7391e2326f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab38de828d95e44f3fe95c036258e9598"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ads-simulator_8cc.html#ab38de828d95e44f3fe95c036258e9598">GetVectorNorm</a> (const double *in_vector, int size)</td></tr>
+<tr class="separator:ab38de828d95e44f3fe95c036258e9598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af56665bff891161a0c14f69334ba7dc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ads-simulator_8cc.html#af56665bff891161a0c14f69334ba7dc9">NormaliseVector</a> (double *in_vector, int size)</td></tr>
+<tr class="separator:af56665bff891161a0c14f69334ba7dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a796f987c7a114e4a30f99022fac1af0d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a796f987c7a114e4a30f99022fac1af0d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>NS_LOG_COMPONENT_DEFINE</b> (&quot;ADSSimulator&quot;)</td></tr>
 <tr class="separator:a796f987c7a114e4a30f99022fac1af0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,10 +150,98 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> (int argc, ch
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>File containing the AD detector and simulation This file contains both headers and declarations for classes + run the simulator in the main class (instead of classic couple .h and .cc because I need to understand the setup to do so in NS3 (act as module or similar with wscript). </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ab38de828d95e44f3fe95c036258e9598"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double GetVectorNorm </td>
+          <td>(</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>in_vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Function to return the norm of the the provided vector </p>
+
+</div>
+</div>
+<a class="anchor" id="af56665bff891161a0c14f69334ba7dc9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NormaliseVector </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>in_vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Function that normalize the provided vector by reference </p>
+
+</div>
+</div>
+<a class="anchor" id="a1c0cb5cd68640a4d58b0bd7391e2326f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double vDotProduct </td>
+          <td>(</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>a_vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>b_vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Function that return the scalar (or dot) product of two vectors (assumed that both have same size) </p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 3 2015 18:18:21 for AnomalyDetectionNS3 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 5 2015 17:16:17 for AnomalyDetectionNS3 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['matrix',['Matrix',['../classMatrix.html',1,'']]],
-  ['model',['Model',['../classModel.html',1,'']]]
+  ['getvectornorm',['GetVectorNorm',['../ads-simulator_8cc.html#ab38de828d95e44f3fe95c036258e9598',1,'ads-simulator.cc']]]
 ];

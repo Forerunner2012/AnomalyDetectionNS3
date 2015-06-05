@@ -43,6 +43,12 @@ class \hyperlink{classDetectorEuclidean}{Detector\+Euclidean}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
+double \hyperlink{ads-simulator_8cc_a1c0cb5cd68640a4d58b0bd7391e2326f}{v\+Dot\+Product} (const double $\ast$a\+\_\+vector, const double $\ast$b\+\_\+vector, int size)
+\item 
+double \hyperlink{ads-simulator_8cc_ab38de828d95e44f3fe95c036258e9598}{Get\+Vector\+Norm} (const double $\ast$in\+\_\+vector, int size)
+\item 
+void \hyperlink{ads-simulator_8cc_af56665bff891161a0c14f69334ba7dc9}{Normalise\+Vector} (double $\ast$in\+\_\+vector, int size)
+\item 
 \hypertarget{ads-simulator_8cc_a796f987c7a114e4a30f99022fac1af0d}{}{\bfseries N\+S\+\_\+\+L\+O\+G\+\_\+\+C\+O\+M\+P\+O\+N\+E\+N\+T\+\_\+\+D\+E\+F\+I\+N\+E} (\char`\"{}A\+D\+S\+Simulator\char`\"{})\label{ads-simulator_8cc_a796f987c7a114e4a30f99022fac1af0d}
 
 \item 
@@ -54,3 +60,32 @@ class \hyperlink{classDetectorEuclidean}{Detector\+Euclidean}
 \subsection{Detailed Description}
 File containing the A\+D detector and simulation This file contains both headers and declarations for classes + run the simulator in the main class (instead of classic couple .h and .cc because I need to understand the setup to do so in N\+S3 (act as module or similar with wscript). 
 
+
+
+\subsection{Function Documentation}
+\hypertarget{ads-simulator_8cc_ab38de828d95e44f3fe95c036258e9598}{}\index{ads-\/simulator.\+cc@{ads-\/simulator.\+cc}!Get\+Vector\+Norm@{Get\+Vector\+Norm}}
+\index{Get\+Vector\+Norm@{Get\+Vector\+Norm}!ads-\/simulator.\+cc@{ads-\/simulator.\+cc}}
+\subsubsection[{Get\+Vector\+Norm}]{\setlength{\rightskip}{0pt plus 5cm}double Get\+Vector\+Norm (
+\begin{DoxyParamCaption}
+\item[{const double $\ast$}]{in\+\_\+vector, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}\label{ads-simulator_8cc_ab38de828d95e44f3fe95c036258e9598}
+Function to return the norm of the the provided vector \hypertarget{ads-simulator_8cc_af56665bff891161a0c14f69334ba7dc9}{}\index{ads-\/simulator.\+cc@{ads-\/simulator.\+cc}!Normalise\+Vector@{Normalise\+Vector}}
+\index{Normalise\+Vector@{Normalise\+Vector}!ads-\/simulator.\+cc@{ads-\/simulator.\+cc}}
+\subsubsection[{Normalise\+Vector}]{\setlength{\rightskip}{0pt plus 5cm}void Normalise\+Vector (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{in\+\_\+vector, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}\label{ads-simulator_8cc_af56665bff891161a0c14f69334ba7dc9}
+Function that normalize the provided vector by reference \hypertarget{ads-simulator_8cc_a1c0cb5cd68640a4d58b0bd7391e2326f}{}\index{ads-\/simulator.\+cc@{ads-\/simulator.\+cc}!v\+Dot\+Product@{v\+Dot\+Product}}
+\index{v\+Dot\+Product@{v\+Dot\+Product}!ads-\/simulator.\+cc@{ads-\/simulator.\+cc}}
+\subsubsection[{v\+Dot\+Product}]{\setlength{\rightskip}{0pt plus 5cm}double v\+Dot\+Product (
+\begin{DoxyParamCaption}
+\item[{const double $\ast$}]{a\+\_\+vector, }
+\item[{const double $\ast$}]{b\+\_\+vector, }
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)}\label{ads-simulator_8cc_a1c0cb5cd68640a4d58b0bd7391e2326f}
+Function that return the scalar (or dot) product of two vectors (assumed that both have same size) 
