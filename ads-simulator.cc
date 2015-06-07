@@ -43,6 +43,7 @@
 // ---------- Namespaces -----------------------------------------------------
 using namespace ns3;
 using namespace std;
+NS_LOG_COMPONENT_DEFINE ("ADSSimulator");
 // ---------- End of Namespaces ----------------------------------------------
 
 // ---------- Prototypes -----------------------------------------------------
@@ -228,7 +229,7 @@ class EuclideanModel: public Model {
 
 public:
   EuclideanModel() : max(0), min(0), threshold(0), avg_dst(0), dvt(0), average(0), num_elements(0), num_avg_elements(0), num_thr_elements(0) {
-          NS_LOG_INFO("Creating model: " << this);
+      NS_LOG_INFO("Creating model: " << this);
   }
 
   ~EuclideanModel() {
@@ -330,7 +331,7 @@ public:
       min[i] = 0;
     }
   }
-    
+
   friend std::ostream& operator<<(std::ostream& s, EuclideanModel& p) {
 
     double* min = p.GetMin();
@@ -440,7 +441,6 @@ private:
 
 
 // ---------- Main -----------------------------------------------------------
-NS_LOG_COMPONENT_DEFINE ("ADSSimulator");
 
 int 
 main (int argc, char *argv[])

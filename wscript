@@ -9,3 +9,9 @@ def build(bld):
                                  ['core', 'applications', 'mobility', 'network', 'wifi','wave'])
     obj.source = 'wave-simulator.cc'
     
+    obj = bld.create_ns3_program('tranform_rawdata_to_ns3mobilityhelper.cc',
+                                 ['core', 'applications', 'mobility', 'network', 'wifi','wave'])
+    obj.source = 'tranform_rawdata_to_ns3mobilityhelper.cc'
+    
+
+
