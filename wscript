@@ -9,9 +9,13 @@ def build(bld):
                                  ['core', 'applications', 'mobility', 'network', 'wifi','wave'])
     obj.source = 'wave-simulator.cc'
     
-    obj = bld.create_ns3_program('tranform_rawdata_to_ns3mobilityhelper.cc',
+    obj = bld.create_ns3_program('tranform_rawdata_to_ns3mobilityhelper',
                                  ['core', 'applications', 'mobility', 'network', 'wifi','wave'])
     obj.source = 'tranform_rawdata_to_ns3mobilityhelper.cc'
+    
+    obj = bld.create_ns3_program('read-coordinates',
+                                 ['core', 'applications', 'mobility', 'network', 'wifi','wave'])
+    obj.source = 'read-coordinates.cc'
     
 
 
