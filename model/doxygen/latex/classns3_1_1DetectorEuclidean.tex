@@ -1,0 +1,183 @@
+\hypertarget{classns3_1_1DetectorEuclidean}{}\section{ns3\+:\+:Detector\+Euclidean Class Reference}
+\label{classns3_1_1DetectorEuclidean}\index{ns3\+::\+Detector\+Euclidean@{ns3\+::\+Detector\+Euclidean}}
+
+
+Euclidian detector used for the 1st algorithm for A\+D Inherit from \hyperlink{classns3_1_1Detector}{Detector}.  
+
+
+
+
+{\ttfamily \#include $<$ad-\/detector-\/simulator.\+h$>$}
+
+Inheritance diagram for ns3\+:\+:Detector\+Euclidean\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classns3_1_1DetectorEuclidean}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classns3_1_1DetectorEuclidean_a2a694d45afca08e38deb3e007dcee77b}{}{\bfseries Detector\+Euclidean} (\hyperlink{classns3_1_1DataSource}{Data\+Source} $\ast$ds, Ptr$<$ Node $>$ p\+\_\+node, \hyperlink{classns3_1_1Model}{Model} $\ast$m, uint64\+\_\+t p\+\_\+init, uint64\+\_\+t p\+\_\+train\+\_\+interval, bool p\+\_\+only\+\_\+one\+\_\+train, bool p\+\_\+norm\+\_\+data, bool p\+\_\+time\+\_\+ref)\label{classns3_1_1DetectorEuclidean_a2a694d45afca08e38deb3e007dcee77b}
+
+\item 
+\hyperlink{classns3_1_1DetectorEuclidean_af8f045a306bb4235bd70c86564cd8255}{Detector\+Euclidean} (\hyperlink{classns3_1_1DataSource}{Data\+Source} $\ast$ds, Ptr$<$ Node $>$ p\+\_\+node, uint64\+\_\+t p\+\_\+init, uint64\+\_\+t p\+\_\+train\+\_\+interval, bool p\+\_\+only\+\_\+one\+\_\+train, bool p\+\_\+norm\+\_\+data, bool p\+\_\+time\+\_\+ref)
+\item 
+\hyperlink{classns3_1_1DetectorEuclidean_ac4242ccbaae19cd3775333df55e25573}{$\sim$\+Detector\+Euclidean} ()
+\item 
+\hyperlink{structns3_1_1Result}{Result} \hyperlink{classns3_1_1DetectorEuclidean_a1668cc11effae9dca3e6e83e13421435}{Evaluate} ()
+\item 
+void \hyperlink{classns3_1_1DetectorEuclidean_aa64ef1d41c1182f4825af495e9bcb039}{Train} (bool anomaly)
+\item 
+\hypertarget{classns3_1_1DetectorEuclidean_a8135fe34471fcffeaf47316529f4e22b}{}void {\bfseries Open\+Log\+Files} ()\label{classns3_1_1DetectorEuclidean_a8135fe34471fcffeaf47316529f4e22b}
+
+\item 
+\hypertarget{classns3_1_1DetectorEuclidean_a784cbc08c217860bb086678b1d29436b}{}void {\bfseries Close\+Log\+Files} ()\label{classns3_1_1DetectorEuclidean_a784cbc08c217860bb086678b1d29436b}
+
+\item 
+\hypertarget{classns3_1_1DetectorEuclidean_a29abb726566683864c1912e740cc440e}{}void {\bfseries Log\+Features} (double $\ast$features, int num\+\_\+features)\label{classns3_1_1DetectorEuclidean_a29abb726566683864c1912e740cc440e}
+
+\item 
+\hypertarget{classns3_1_1DetectorEuclidean_a67dc448d211d6d91095a89960dfa95ae}{}void {\bfseries Log\+Norm\+Features} (double $\ast$features, int num\+\_\+features)\label{classns3_1_1DetectorEuclidean_a67dc448d211d6d91095a89960dfa95ae}
+
+\item 
+\hypertarget{classns3_1_1DetectorEuclidean_a47b22c0b1663abc16f32c0685c856b69}{}void {\bfseries Log\+Evaluation\+Result} (string packet\+\_\+id, double distance, double threshold, double result, double $\ast$log\+\_\+dst, int num\+\_\+features, Attack\+Type attack)\label{classns3_1_1DetectorEuclidean_a47b22c0b1663abc16f32c0685c856b69}
+
+\item 
+\hypertarget{classns3_1_1DetectorEuclidean_ad95384506a0aeee28db09c4350257b4d}{}void {\bfseries Log\+Vector\+Projections} (double $\ast$projections, int size)\label{classns3_1_1DetectorEuclidean_ad95384506a0aeee28db09c4350257b4d}
+
+\item 
+\hypertarget{classns3_1_1DetectorEuclidean_aa5844006d7a0e999b3b5bddd2eb2441e}{}void {\bfseries Create\+Normality\+Model} ()\label{classns3_1_1DetectorEuclidean_aa5844006d7a0e999b3b5bddd2eb2441e}
+
+\item 
+void \hyperlink{classns3_1_1DetectorEuclidean_abe46639e2bfc51645b6b5ee7bfb5803d}{Update\+Threshold} (\hyperlink{classns3_1_1EuclideanModel}{Euclidean\+Model} $\ast$model, double $\ast$p\+\_\+features, uint16\+\_\+t p\+\_\+num\+\_\+feat, bool p\+\_\+norm\+\_\+data)
+\item 
+void \hyperlink{classns3_1_1DetectorEuclidean_acff00214e0871307be11fe1371057039}{Calculate\+Threshold} (\hyperlink{classns3_1_1EuclideanModel}{Euclidean\+Model} $\ast$model)
+\item 
+double \hyperlink{classns3_1_1DetectorEuclidean_a4d37d16d244e69ee9605264126fc3742}{Distance} (double $\ast$v\+\_\+avg\+\_\+feat, double $\ast$v\+\_\+feat, int size, double $\ast$log\+\_\+dst)
+\item 
+void \hyperlink{classns3_1_1DetectorEuclidean_ad5fa9f27f2947e221f9c40954e91fb31}{Update\+Average\+Max\+Min} (\hyperlink{classns3_1_1EuclideanModel}{Euclidean\+Model} $\ast$p\+\_\+inc\+\_\+model, double $\ast$p\+\_\+features, uint16\+\_\+t p\+\_\+num\+\_\+feat)
+\item 
+void \hyperlink{classns3_1_1DetectorEuclidean_a6f22d2df3e7896d186e7e7dd5082dfea}{Calculate\+Average} (\hyperlink{classns3_1_1EuclideanModel}{Euclidean\+Model} $\ast$p\+\_\+inc\+\_\+model, uint16\+\_\+t p\+\_\+num\+\_\+feat, bool p\+\_\+norm\+\_\+data)
+\item 
+void \hyperlink{classns3_1_1DetectorEuclidean_a43834b3c69f2ff7da32e68a5dde0cff5}{Normalise} (double $\ast$max, double $\ast$min, double $\ast$vector, int num\+\_\+elements)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Euclidian detector used for the 1st algorithm for A\+D Inherit from \hyperlink{classns3_1_1Detector}{Detector}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classns3_1_1DetectorEuclidean_af8f045a306bb4235bd70c86564cd8255}{}\index{ns3\+::\+Detector\+Euclidean@{ns3\+::\+Detector\+Euclidean}!Detector\+Euclidean@{Detector\+Euclidean}}
+\index{Detector\+Euclidean@{Detector\+Euclidean}!ns3\+::\+Detector\+Euclidean@{ns3\+::\+Detector\+Euclidean}}
+\subsubsection[{Detector\+Euclidean}]{\setlength{\rightskip}{0pt plus 5cm}ns3\+::\+Detector\+Euclidean\+::\+Detector\+Euclidean (
+\begin{DoxyParamCaption}
+\item[{{\bf Data\+Source} $\ast$}]{ds, }
+\item[{Ptr$<$ Node $>$}]{p\+\_\+node, }
+\item[{uint64\+\_\+t}]{p\+\_\+init, }
+\item[{uint64\+\_\+t}]{p\+\_\+train\+\_\+interval, }
+\item[{bool}]{p\+\_\+only\+\_\+one\+\_\+train, }
+\item[{bool}]{p\+\_\+norm\+\_\+data, }
+\item[{bool}]{p\+\_\+time\+\_\+ref}
+\end{DoxyParamCaption}
+)}\label{classns3_1_1DetectorEuclidean_af8f045a306bb4235bd70c86564cd8255}
+Anomaly detector\+: Deviation from sum of squared differences It creates the normality model in two steps. First calculates the averages of the features and secondly calculates the threshold used for the distances. \hypertarget{classns3_1_1DetectorEuclidean_ac4242ccbaae19cd3775333df55e25573}{}\index{ns3\+::\+Detector\+Euclidean@{ns3\+::\+Detector\+Euclidean}!````~Detector\+Euclidean@{$\sim$\+Detector\+Euclidean}}
+\index{````~Detector\+Euclidean@{$\sim$\+Detector\+Euclidean}!ns3\+::\+Detector\+Euclidean@{ns3\+::\+Detector\+Euclidean}}
+\subsubsection[{$\sim$\+Detector\+Euclidean}]{\setlength{\rightskip}{0pt plus 5cm}ns3\+::\+Detector\+Euclidean\+::$\sim$\+Detector\+Euclidean (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classns3_1_1DetectorEuclidean_ac4242ccbaae19cd3775333df55e25573}
+Destructor for \hyperlink{classns3_1_1DetectorEuclidean}{Detector\+Euclidean} class 
+
+\subsection{Member Function Documentation}
+\hypertarget{classns3_1_1DetectorEuclidean_a6f22d2df3e7896d186e7e7dd5082dfea}{}\index{ns3\+::\+Detector\+Euclidean@{ns3\+::\+Detector\+Euclidean}!Calculate\+Average@{Calculate\+Average}}
+\index{Calculate\+Average@{Calculate\+Average}!ns3\+::\+Detector\+Euclidean@{ns3\+::\+Detector\+Euclidean}}
+\subsubsection[{Calculate\+Average}]{\setlength{\rightskip}{0pt plus 5cm}void ns3\+::\+Detector\+Euclidean\+::\+Calculate\+Average (
+\begin{DoxyParamCaption}
+\item[{{\bf Euclidean\+Model} $\ast$}]{p\+\_\+inc\+\_\+model, }
+\item[{uint16\+\_\+t}]{p\+\_\+num\+\_\+feat, }
+\item[{bool}]{p\+\_\+norm\+\_\+data}
+\end{DoxyParamCaption}
+)}\label{classns3_1_1DetectorEuclidean_a6f22d2df3e7896d186e7e7dd5082dfea}
+Method that calculates final average vector. \hypertarget{classns3_1_1DetectorEuclidean_acff00214e0871307be11fe1371057039}{}\index{ns3\+::\+Detector\+Euclidean@{ns3\+::\+Detector\+Euclidean}!Calculate\+Threshold@{Calculate\+Threshold}}
+\index{Calculate\+Threshold@{Calculate\+Threshold}!ns3\+::\+Detector\+Euclidean@{ns3\+::\+Detector\+Euclidean}}
+\subsubsection[{Calculate\+Threshold}]{\setlength{\rightskip}{0pt plus 5cm}void ns3\+::\+Detector\+Euclidean\+::\+Calculate\+Threshold (
+\begin{DoxyParamCaption}
+\item[{{\bf Euclidean\+Model} $\ast$}]{model}
+\end{DoxyParamCaption}
+)}\label{classns3_1_1DetectorEuclidean_acff00214e0871307be11fe1371057039}
+Calculate the threshold used to evaluate the distance in collecting data phase during training \#1 \hypertarget{classns3_1_1DetectorEuclidean_a4d37d16d244e69ee9605264126fc3742}{}\index{ns3\+::\+Detector\+Euclidean@{ns3\+::\+Detector\+Euclidean}!Distance@{Distance}}
+\index{Distance@{Distance}!ns3\+::\+Detector\+Euclidean@{ns3\+::\+Detector\+Euclidean}}
+\subsubsection[{Distance}]{\setlength{\rightskip}{0pt plus 5cm}double ns3\+::\+Detector\+Euclidean\+::\+Distance (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{v\+\_\+1, }
+\item[{double $\ast$}]{v\+\_\+2, }
+\item[{int}]{size, }
+\item[{double $\ast$}]{log\+\_\+dst}
+\end{DoxyParamCaption}
+)}\label{classns3_1_1DetectorEuclidean_a4d37d16d244e69ee9605264126fc3742}
+Calculate distance between two vectors based on sum of squared differences. \hypertarget{classns3_1_1DetectorEuclidean_a1668cc11effae9dca3e6e83e13421435}{}\index{ns3\+::\+Detector\+Euclidean@{ns3\+::\+Detector\+Euclidean}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!ns3\+::\+Detector\+Euclidean@{ns3\+::\+Detector\+Euclidean}}
+\subsubsection[{Evaluate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Result} ns3\+::\+Detector\+Euclidean\+::\+Evaluate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classns3_1_1DetectorEuclidean_a1668cc11effae9dca3e6e83e13421435}
+Function that evaluates the current observation against the normality model.
+
+Returns\+: 0 -\/ Normal evaluation 1 -\/ Abnormal evaluation 
+
+Implements \hyperlink{classns3_1_1Detector}{ns3\+::\+Detector}.
+
+\hypertarget{classns3_1_1DetectorEuclidean_a43834b3c69f2ff7da32e68a5dde0cff5}{}\index{ns3\+::\+Detector\+Euclidean@{ns3\+::\+Detector\+Euclidean}!Normalise@{Normalise}}
+\index{Normalise@{Normalise}!ns3\+::\+Detector\+Euclidean@{ns3\+::\+Detector\+Euclidean}}
+\subsubsection[{Normalise}]{\setlength{\rightskip}{0pt plus 5cm}void ns3\+::\+Detector\+Euclidean\+::\+Normalise (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{max, }
+\item[{double $\ast$}]{min, }
+\item[{double $\ast$}]{vector, }
+\item[{int}]{num\+\_\+elements}
+\end{DoxyParamCaption}
+)}\label{classns3_1_1DetectorEuclidean_a43834b3c69f2ff7da32e68a5dde0cff5}
+Method to normalise our vector with the (x-\/min(x))/(max(x)-\/min(x)) normalization technic \hypertarget{classns3_1_1DetectorEuclidean_aa64ef1d41c1182f4825af495e9bcb039}{}\index{ns3\+::\+Detector\+Euclidean@{ns3\+::\+Detector\+Euclidean}!Train@{Train}}
+\index{Train@{Train}!ns3\+::\+Detector\+Euclidean@{ns3\+::\+Detector\+Euclidean}}
+\subsubsection[{Train}]{\setlength{\rightskip}{0pt plus 5cm}void ns3\+::\+Detector\+Euclidean\+::\+Train (
+\begin{DoxyParamCaption}
+\item[{bool}]{anomaly}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classns3_1_1DetectorEuclidean_aa64ef1d41c1182f4825af495e9bcb039}
+Method that coordinates the training of the normality model.
+
+Behaviour\+: Creates only one model after an initial period collecting data. 
+
+Implements \hyperlink{classns3_1_1Detector}{ns3\+::\+Detector}.
+
+\hypertarget{classns3_1_1DetectorEuclidean_ad5fa9f27f2947e221f9c40954e91fb31}{}\index{ns3\+::\+Detector\+Euclidean@{ns3\+::\+Detector\+Euclidean}!Update\+Average\+Max\+Min@{Update\+Average\+Max\+Min}}
+\index{Update\+Average\+Max\+Min@{Update\+Average\+Max\+Min}!ns3\+::\+Detector\+Euclidean@{ns3\+::\+Detector\+Euclidean}}
+\subsubsection[{Update\+Average\+Max\+Min}]{\setlength{\rightskip}{0pt plus 5cm}void ns3\+::\+Detector\+Euclidean\+::\+Update\+Average\+Max\+Min (
+\begin{DoxyParamCaption}
+\item[{{\bf Euclidean\+Model} $\ast$}]{p\+\_\+inc\+\_\+model, }
+\item[{double $\ast$}]{p\+\_\+features, }
+\item[{uint16\+\_\+t}]{p\+\_\+num\+\_\+feat}
+\end{DoxyParamCaption}
+)}\label{classns3_1_1DetectorEuclidean_ad5fa9f27f2947e221f9c40954e91fb31}
+Method to update the temporal model with the new observation.
+
+Notice that the average vector is only incremented instead of averaging it. This is because of performance reasons and for getting maximum precision. \hypertarget{classns3_1_1DetectorEuclidean_abe46639e2bfc51645b6b5ee7bfb5803d}{}\index{ns3\+::\+Detector\+Euclidean@{ns3\+::\+Detector\+Euclidean}!Update\+Threshold@{Update\+Threshold}}
+\index{Update\+Threshold@{Update\+Threshold}!ns3\+::\+Detector\+Euclidean@{ns3\+::\+Detector\+Euclidean}}
+\subsubsection[{Update\+Threshold}]{\setlength{\rightskip}{0pt plus 5cm}void ns3\+::\+Detector\+Euclidean\+::\+Update\+Threshold (
+\begin{DoxyParamCaption}
+\item[{{\bf Euclidean\+Model} $\ast$}]{model, }
+\item[{double $\ast$}]{p\+\_\+features, }
+\item[{uint16\+\_\+t}]{p\+\_\+num\+\_\+feat, }
+\item[{bool}]{p\+\_\+norm\+\_\+data}
+\end{DoxyParamCaption}
+)}\label{classns3_1_1DetectorEuclidean_abe46639e2bfc51645b6b5ee7bfb5803d}
+Calculate the threshold used to evaluate the distance in computing data phase during training \#2 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+ad-\/detector-\/simulator.\+h\item 
+ad-\/detector-\/simulator.\+cc\end{DoxyCompactItemize}

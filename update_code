@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cp -ur ../ns-allinone-3.23/ns-3.23/scratch/* .
+cp -ur ../ns-allinone-3.23/ns-3.23/src/ad-detector-simulator/* .
 doxygen config-file
 

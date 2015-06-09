@@ -1,0 +1,71 @@
+// List of Command Lines
+
+//
+// waf building (debuf, optimized, ...)
+//
+/.waf clean
+./waf --build-profile=debug --enable-examples --enable-tests configure
+./waf
+
+//
+// ns2-mobility-trace
+//
+./waf --visualize --run "ns2-mobility-trace \
+--traceFile=src/ad-detector-simulator/data/A6-d07-h08_ns2formated.log \
+--nodeNum=2083 \
+--duration=1800.0 \
+--logFile=ns2-mob.log"
+
+./waf --visualize --run "ns2-mobility-trace \
+--traceFile=src/ad-detector-simulator/data/A6-d07-h08_smaller_ns2formated.log \
+--nodeNum=557 \
+--duration=500.0 \
+--logFile=ns2-mob.log"
+
+./waf --visualize --run "ns2-mobility-trace \
+--traceFile=src/ad-detector-simulator/data/ct-unterstrass-1day.filt.7.adj.mov \
+--nodeNum=90 \
+--duration=302.0 \
+--logFile=ns2-mob.log"
+
+./waf --visualize --run "ns2-mobility-trace \
+--traceFile=src/ad-detector-simulator/data/hw-effi_winti-1day.filt.4.adj.mov \
+--nodeNum=1319 \
+--duration=302.0 \
+--logFile=ns2-mob.log"
+
+//
+// scratch/tranform_rawdata_to_ns3mobilityhelper (redo)
+//
+./waf --run "src/ad-detector-simulator/examples/convert_rawdata_to_ns3mobilityhelper --rawData=src/ad-detector-simulator/data/A6-d07-h08.log --convertData=scratch/A6-d07-h08_ns2formated.log"
+
+./waf --run "src/ad-detector-simulator/examples/convert_rawdata_to_ns3mobilityhelper --rawData=src/ad-detector-simulator/data/A6-d07-h08_smaller.log --convertData=scratch/A6-d07-h08_smaller_ns2formated.log"
+
+
+//
+// src/wave/examples/vanet-routing-compare (need to explore more the code, doesn't work on others examples)
+//
+./waf --visualize --run "src/wave/examples/vanet-routing-compare --help"
+
+./waf --visualize --run "src/wave/examples/vanet-routing-compare --scenario=1 --nodes=25"
+
+./waf --visualize --run "src/wave/examples/vanet-routing-compare --scenario=1 \
+--totaltime=500 \
+--nodes=557 \
+--traceFile=scratch/A6-d07-h08_smaller_ns2formated.log"
+
+./waf --run "scratch/vanet-routing-compare --lossModel=3 --fading=0  \
+--traceFile=./scratch/low99-ct-unterstrass-1day.filt.7.adj.mov  \
+--scenario=2"
+
+./waf --run "scratch/vanet-routing-compare --lossModel=3 --fading=0 --node=90 \
+--traceFile=./scratch/ct-unterstrass-1day.filt.7.adj.mov  \
+--scenario=2"
+
+//
+// ad-detector-simulator Module
+//
+./waf --run src/ad-detector-simulator/examples/ad-detector-simulator-example
+
+./waf --visualize --run "src/ad-detector-simulator/examples/read-coordinatesToNs2MobilityHelper --traceFile=src/ad-detector-simulator/data/A6-d07-h08_smaller_ns2formated.log --nodeNum=557 --duration=500.0 --logFile=ns2-mob.log"
+

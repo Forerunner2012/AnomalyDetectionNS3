@@ -1,11 +1,13 @@
 #!/bin/bash
 
-git add doxygen/
-
 git add update_code
 git add prepare_for_commit 
 
-git add *.cc
+git add doc/
+git add examples/
+git add helper/
+git add model/
+
 git add wscript
 
 

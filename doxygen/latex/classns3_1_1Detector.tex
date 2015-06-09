@@ -1,0 +1,62 @@
+\hypertarget{classns3_1_1Detector}{}\section{ns3\+:\+:Detector Class Reference}
+\label{classns3_1_1Detector}\index{ns3\+::\+Detector@{ns3\+::\+Detector}}
+
+
+Abstract class of \hyperlink{classns3_1_1Detector}{Detector}.  
+
+
+
+
+{\ttfamily \#include $<$ad-\/detector-\/simulator.\+h$>$}
+
+Inheritance diagram for ns3\+:\+:Detector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classns3_1_1Detector}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classns3_1_1Detector_a2b08bd8f2cc929e4625e37c88bed2d05}{}{\bfseries Detector} (\hyperlink{classns3_1_1DataSource}{Data\+Source} $\ast$ds, \hyperlink{classns3_1_1Model}{Model} $\ast$m, uint64\+\_\+t p\+\_\+init, uint64\+\_\+t p\+\_\+train\+\_\+interval, bool p\+\_\+only\+\_\+one\+\_\+train)\label{classns3_1_1Detector_a2b08bd8f2cc929e4625e37c88bed2d05}
+
+\item 
+\hypertarget{classns3_1_1Detector_a9af53e0a50c07bdf4c31b8d98b8f19b0}{}{\bfseries Detector} (\hyperlink{classns3_1_1DataSource}{Data\+Source} $\ast$ds, uint64\+\_\+t p\+\_\+init, uint64\+\_\+t p\+\_\+train\+\_\+interval, bool p\+\_\+only\+\_\+one\+\_\+train)\label{classns3_1_1Detector_a9af53e0a50c07bdf4c31b8d98b8f19b0}
+
+\item 
+\hypertarget{classns3_1_1Detector_a96830267a04e65ada11b29c565063bcf}{}virtual \hyperlink{structns3_1_1Result}{Result} {\bfseries Evaluate} ()=0\label{classns3_1_1Detector_a96830267a04e65ada11b29c565063bcf}
+
+\item 
+\hypertarget{classns3_1_1Detector_a589c5199ff0dc437dfa2dc59610aa5c7}{}virtual void {\bfseries Train} (bool anomaly)=0\label{classns3_1_1Detector_a589c5199ff0dc437dfa2dc59610aa5c7}
+
+\item 
+\hypertarget{classns3_1_1Detector_ab6ab284e496c994d05729f81e66ac587}{}void {\bfseries register\+Feature\+Extractor} (\hyperlink{classns3_1_1DataSource}{Data\+Source} $\ast$datasource)\label{classns3_1_1Detector_ab6ab284e496c994d05729f81e66ac587}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classns3_1_1Detector_a1bd1b6fa34df0ffbbdc610bf4ddff639}{}\hyperlink{classns3_1_1DataSource}{Data\+Source} $\ast$ {\bfseries m\+\_\+datasource}\label{classns3_1_1Detector_a1bd1b6fa34df0ffbbdc610bf4ddff639}
+
+\item 
+\hypertarget{classns3_1_1Detector_abc82d62718c8cf93caf27faceff8a719}{}\hyperlink{classns3_1_1Model}{Model} $\ast$ {\bfseries m\+\_\+model}\label{classns3_1_1Detector_abc82d62718c8cf93caf27faceff8a719}
+
+\item 
+\hypertarget{classns3_1_1Detector_a08b2e35a9f6206b2ca25f674b09d9b9c}{}uint64\+\_\+t {\bfseries m\+\_\+init\+\_\+period}\label{classns3_1_1Detector_a08b2e35a9f6206b2ca25f674b09d9b9c}
+
+\item 
+\hypertarget{classns3_1_1Detector_a9833b6d578c0ec6b1d204307eaaa7267}{}uint64\+\_\+t {\bfseries m\+\_\+train\+\_\+interval}\label{classns3_1_1Detector_a9833b6d578c0ec6b1d204307eaaa7267}
+
+\item 
+\hypertarget{classns3_1_1Detector_a805685afe6ca85ebe299cdbc42696cc1}{}bool {\bfseries m\+\_\+only\+\_\+one\+\_\+train}\label{classns3_1_1Detector_a805685afe6ca85ebe299cdbc42696cc1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class of \hyperlink{classns3_1_1Detector}{Detector}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+model/ad-\/detector-\/simulator.\+h\item 
+model/ad-\/detector-\/simulator.\+cc\end{DoxyCompactItemize}

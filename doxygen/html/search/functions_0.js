@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['calculateaverage',['CalculateAverage',['../classDetectorEuclidean.html#a2507d55c396e0912aa8cc54cded8d9e2',1,'DetectorEuclidean']]],
-  ['calculatethreshold',['CalculateThreshold',['../classDetectorEuclidean.html#a5c153476961363c67cf34f467aa06062',1,'DetectorEuclidean']]]
+  ['calculateaverage',['CalculateAverage',['../classns3_1_1DetectorEuclidean.html#a6f22d2df3e7896d186e7e7dd5082dfea',1,'ns3::DetectorEuclidean']]],
+  ['calculatethreshold',['CalculateThreshold',['../classns3_1_1DetectorEuclidean.html#acff00214e0871307be11fe1371057039',1,'ns3::DetectorEuclidean']]]
 ];

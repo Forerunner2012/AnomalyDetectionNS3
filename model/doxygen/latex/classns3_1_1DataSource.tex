@@ -1,0 +1,41 @@
+\hypertarget{classns3_1_1DataSource}{}\section{ns3\+:\+:Data\+Source Class Reference}
+\label{classns3_1_1DataSource}\index{ns3\+::\+Data\+Source@{ns3\+::\+Data\+Source}}
+
+
+Abstract class of \hyperlink{classns3_1_1DataSource}{Data\+Source}.  
+
+
+
+
+{\ttfamily \#include $<$ad-\/detector-\/simulator.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classns3_1_1DataSource_a52c62cbea37352a3dbd8ebb5cad21e2e}{}virtual \hyperlink{classns3_1_1Matrix}{Matrix} $\ast$ {\bfseries Extract\+Sample\+Features} ()=0\label{classns3_1_1DataSource_a52c62cbea37352a3dbd8ebb5cad21e2e}
+
+\item 
+\hypertarget{classns3_1_1DataSource_aa0a81da633e97fc2a27d833636c54d95}{}virtual double $\ast$ {\bfseries Extract\+Features} (Ptr$<$ Packet $>$ packet)=0\label{classns3_1_1DataSource_aa0a81da633e97fc2a27d833636c54d95}
+
+\item 
+\hypertarget{classns3_1_1DataSource_a1e2ec3c1ba6468aba51cab6303750d7e}{}virtual void {\bfseries Update\+Data\+Base} (double $\ast$features)=0\label{classns3_1_1DataSource_a1e2ec3c1ba6468aba51cab6303750d7e}
+
+\item 
+\hypertarget{classns3_1_1DataSource_a439fd33670b58b31d8a864e67531f35c}{}virtual uint16\+\_\+t {\bfseries Get\+Number\+Features} ()\label{classns3_1_1DataSource_a439fd33670b58b31d8a864e67531f35c}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classns3_1_1DataSource_a26702605e6705e875ea737b0cf32fdc7}{}uint16\+\_\+t {\bfseries m\+\_\+num\+\_\+features}\label{classns3_1_1DataSource_a26702605e6705e875ea737b0cf32fdc7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class of \hyperlink{classns3_1_1DataSource}{Data\+Source}. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+ad-\/detector-\/simulator.\+h\item 
+ad-\/detector-\/simulator.\+cc\end{DoxyCompactItemize}

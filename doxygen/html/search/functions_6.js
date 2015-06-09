@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['updateaveragemaxmin',['UpdateAverageMaxMin',['../classDetectorEuclidean.html#afaebdff052eee6bbdfabd474f2f3b623',1,'DetectorEuclidean']]],
-  ['updatethreshold',['UpdateThreshold',['../classDetectorEuclidean.html#a09a0f75f67c2f09560428cef82ff4059',1,'DetectorEuclidean']]]
+  ['_7edetectoreuclidean',['~DetectorEuclidean',['../classns3_1_1DetectorEuclidean.html#ac4242ccbaae19cd3775333df55e25573',1,'ns3::DetectorEuclidean']]]
 ];

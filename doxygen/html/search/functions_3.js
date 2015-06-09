@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getvectornorm',['GetVectorNorm',['../ads-simulator_8cc.html#ab38de828d95e44f3fe95c036258e9598',1,'ads-simulator.cc']]]
+  ['normalise',['Normalise',['../classns3_1_1DetectorEuclidean.html#a43834b3c69f2ff7da32e68a5dde0cff5',1,'ns3::DetectorEuclidean']]]
 ];
